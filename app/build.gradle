@@ -32,5 +32,7 @@ dependencies {
 
     //google material library
     implementation 'com.google.android.material:material:1.4.0'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:design:22.2.0'
 
 }
