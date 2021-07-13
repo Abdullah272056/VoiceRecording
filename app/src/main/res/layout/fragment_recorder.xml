@@ -3,14 +3,72 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragment.Recorder">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:gravity="center"
-        android:textSize="30sp"
+    tools:context=".fragment.Recorder">
+    <LinearLayout
+        android:background="@color/colorBlack"
+        android:weightSum="4"
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Hello First Fragment" />
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <TextView
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:textColor="#FFFFFF"
+                android:id="@+id/txtRecStatus"
+                android:textSize="32sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <pl.droidsonroids.gif.GifImageView
+                android:visibility="gone"
+                android:id="@+id/gifView"
+                android:src="@drawable/visual"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Chronometer
+                android:id="@+id/timeRec"
+                android:layout_margin="20dp"
+                android:gravity="center"
+                android:textSize="30sp"
+                android:textColor="#FFFFFF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <ImageButton
+                android:layout_margin="15dp"
+                android:src="@drawable/ic_record"
+                android:background="@drawable/round_button"
+                android:id="@+id/btnRec"
+                android:layout_width="70dp"
+                android:layout_height="70dp"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
 
 </FrameLayout>

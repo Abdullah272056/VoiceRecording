@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         tabLayout.addTab(tabLayout.newTab().setText("Recording"));
 
 
-        pagerAdapter=new PagerAdapter(getSupportFragmentManager(),tabLayout.getTabCount());
+        pagerAdapter= new PagerAdapter(getSupportFragmentManager(), tabLayout.getTabCount());
         viewPager.setAdapter(pagerAdapter);
 
         viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    public  class PagerAdapter extends FragmentPagerAdapter {
+    public static class PagerAdapter extends FragmentPagerAdapter {
         int tabCount;
         public PagerAdapter(@NonNull FragmentManager fm, int tabCount) {
             super(fm);

@@ -35,4 +35,9 @@ dependencies {
     //noinspection GradleCompatible
     implementation 'com.android.support:design:22.2.0'
 
+    // add gradle for GifView
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.1.17'
+
+    implementation 'com.karumi:dexter:6.2.3'
+
 }
